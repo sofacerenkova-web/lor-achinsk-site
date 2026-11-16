@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ЛОР в Ачинске — Центр ЛОР Ирины Сеновой</title>
 <meta name="description" content="Платный приём ЛОР‑врача и сурдолога в Ачинске для взрослых и детей. Аудиометрия, цены и запись в Центре ЛОР Ирины Сеновой.">
-<meta name="robots" content="noindex, nofollow"><!-- ТЕСТОВАЯ ВЕРСИЯ: на боевом домене вернуть index, follow -->
+<meta name="robots" content="index, follow">
 <!-- ВАЖНО: перед публикацией заменить [ДОМЕН] на реальный домен во всех тегах, JSON-LD, robots.txt и sitemap.xml -->
 <link rel="canonical" href="https://[ДОМЕН]/">
 <meta property="og:type" content="website">
@@ -1045,6 +1045,52 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
 @media (max-width:1180px){.dir-wide-in{grid-template-columns:1fr 1fr}.dir-img-wide{grid-column:1/-1;max-height:300px}}
 @media (max-width:720px){.dir-wide-in{grid-template-columns:1fr}}
 .it1{grid-area:1/1}.it2{grid-area:2/1}.it3{grid-area:2/2}
+
+/* v20: mobile fixes */
+.doc-info .h3,.staff-card h3,.dir h3,.h2,.h3{hyphens:manual}
+@media (max-width:720px){
+  .hero{padding-bottom:40px}
+  .hero-inner{padding-bottom:24px}
+  .hero-media{height:400px;margin:0 16px}
+  .hero-copy{gap:20px}
+  .hero-copy .tiles .b-tile{display:flex;flex-direction:column;justify-content:flex-start}
+  .hero-copy .tiles .b-tile .lico{position:static;margin:0 0 8px}
+  .hero-copy .tiles .b-big{margin-top:0;font-size:26px}
+  .hero-copy .tiles .b-cap{min-height:0}
+  .hero-cta{gap:16px}
+  #methods .m-head{grid-template-columns:minmax(0,1fr) 44px;gap:12px;padding:18px 0}
+  #methods .m-title{flex-direction:column;align-items:flex-start;gap:2px}
+  #methods .m-tag{font-size:14px;line-height:20px}
+  #methods .m-grid{padding-bottom:20px}
+  .section{padding:56px 0}
+  .sec-head{margin-bottom:28px}
+  .faq-grid{gap:8px}
+  .doc-info .h3{font-size:28px;line-height:34px}
+  .staff-card h3{font-size:17px;line-height:24px}
+  .staff-card p{font-size:14px;line-height:21px}
+  .price-key li{padding:14px 0}
+  .dir-img{margin-bottom:16px}
+  .dir{padding:10px 10px 22px}
+  .dir>.dir-top,.dir>h3,.dir>.dlist{padding:0 10px}
+  .dir h3{font-size:24px;line-height:30px;margin-bottom:16px}
+  .contact-card h2.h2{font-size:30px}
+  .book-copy .book-phone{font-size:32px}
+  .motto p{font-size:22px;line-height:30px}
+  .m-text>p{font-size:15px;line-height:24px}
+  .cta-bar{padding:6px}
+  .cb-max{min-height:48px}
+  .cb-btn{min-height:48px}
+  .container{padding-left:16px;padding-right:16px}
+  .cookie{padding:14px 16px;gap:10px;flex-direction:row;align-items:center;bottom:8px}
+  .cookie p{font-size:12px;line-height:17px}
+  .cookie .btn-sm{min-height:40px;padding:6px 14px;flex:none}
+}
+@media (max-width:380px){
+  .hero .h1{font-size:34px}
+  .hero-copy .tiles .b-cap{font-size:11px;line-height:15px}
+  .cb-max span{display:none}
+  .cb-max{padding:8px 14px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MedicalClinic", "@id": "https://[ДОМЕН]/#clinic", "name": "Центр ЛОР Ирины Сеновой", "legalName": "ООО «Фарм сервис»", "url": "https://[ДОМЕН]/", "logo": "https://[ДОМЕН]/img/logo.png", "image": "https://[ДОМЕН]/img/hero.jpg", "medicalSpecialty": "Otolaryngologic", "telephone": ["+7-908-215-92-11", "+7-39151-5-92-11"], "email": "farmservis69@mail.ru", "taxID": "2443045036", "priceRange": "300–5000 ₽", "currenciesAccepted": "RUB", "isAcceptingNewPatients": true, "address": {"@type": "PostalAddress", "streetAddress": "1-й микрорайон, зд. 30А, ТЦ «Сапфир», 2 этаж", "addressLocality": "Ачинск", "addressRegion": "Красноярский край", "postalCode": "662150", "addressCountry": "RU"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Friday"], "opens": "10:00", "closes": "17:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "12:00", "closes": "19:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}], "employee": {"@id": "https://[ДОМЕН]/#senova"}, "hasOfferCatalog": {"@id": "https://[ДОМЕН]/#services"}}, {"@type": ["Person", "Physician"], "@id": "https://[ДОМЕН]/#senova", "name": "Сенова Ирина Александровна", "jobTitle": "Врач‑оториноларинголог, сурдолог‑оториноларинголог", "medicalSpecialty": "Otolaryngologic", "image": "https://[ДОМЕН]/img/senova.jpg", "worksFor": {"@id": "https://[ДОМЕН]/#clinic"}}, {"@type": "OfferCatalog", "@id": "https://[ДОМЕН]/#services", "name": "Услуги Центра ЛОР Ирины Сеновой", "itemListElement": [{"@type": "Offer", "price": 2500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный эндоскопический осмотр ЛОР"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Повторный приём ЛОР"}}, {"@type": "Offer", "price": 4000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный приём сурдолога с аудиометрией"}}, {"@type": "Offer", "price": 2000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Аудиометрия"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Удаление серной пробки"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Промывание по Проетцу («Кукушка»)"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Продувание слуховых труб по Политцеру"}}, {"@type": "Offer", "price": 700, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Санация лакун миндалин"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Лазеротерапия ЛОР‑органов"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Ингаляции «Пари Синус»"}}]}, {"@type": "WebSite", "@id": "https://[ДОМЕН]/#website", "url": "https://[ДОМЕН]/", "name": "Центр ЛОР Ирины Сеновой", "inLanguage": "ru", "publisher": {"@id": "https://[ДОМЕН]/#clinic"}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Нужно ли записываться заранее?", "acceptedAnswer": {"@type": "Answer", "text": "Да, приём ведётся только по предварительной записи. Позвоните по номеру +7 908 215‑92‑11 или оставьте заявку на сайте, администратор перезвонит и подберёт время."}}, {"@type": "Question", "name": "С какого возраста вы принимаете детей?", "acceptedAnswer": {"@type": "Answer", "text": "Принимаем детей с рождения. Для аппаратных процедур есть свои возрастные ограничения, они указаны в прейскуранте у каждой процедуры. Ребёнка приводит законный представитель."}}, {"@type": "Question", "name": "Сколько стоит первичный приём?", "acceptedAnswer": {"@type": "Answer", "text": "Первичный эндоскопический осмотр ЛОР стоит 2 500 ₽. Для семьи из двух человек 4 000 ₽, из трёх 5 000 ₽. Приём с процедурой 3 500 ₽."}}, {"@type": "Question", "name": "Входят ли лекарства в стоимость процедур?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Стоимость процедур в прейскуранте указана с учётом лекарственных препаратов и расходных материалов."}}, {"@type": "Question", "name": "У меня уже есть аудиограмма. Нужно делать новую?", "acceptedAnswer": {"@type": "Answer", "text": "Не обязательно. Первичный приём сурдолога со своей аудиограммой стоит 3 000 ₽, врач скажет, нужна ли повторная аудиометрия."}}, {"@type": "Question", "name": "Можно ли пройти осмотр перед плановой операцией?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Осмотр ЛОР для планового оперативного лечения стоит 1 000 ₽, с прямой ларингоскопией 2 500 ₽."}}, {"@type": "Question", "name": "Можно ли лечиться у вас по полису ОМС?", "acceptedAnswer": {"@type": "Answer", "text": "Услуги центра платные. Бесплатную помощь можно получить по программе госгарантий в организациях, которые в ней участвуют, подробности в разделе «Пациентам»."}}]}</script>
