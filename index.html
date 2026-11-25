@@ -29,7 +29,7 @@
 <link rel="preload" as="image" type="image/webp" href="img/hero-960.webp" imagesrcset="img/hero-640.webp 640w, img/hero-960.webp 960w, img/hero-1219.webp 1219w" imagesizes="(max-width:720px) 100vw, 50vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;family=Onest:wght@500;600;700&amp;display=swap" rel="stylesheet">
 <style>:root{
   --ink:#0A1B2A; --ink-2:#3B4B58; --ink-3:#5E6E7A;
   --bg:#F3F1EC; --white:#FFFFFF; --line:#E2DED5;
@@ -41,7 +41,7 @@
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 0}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,sans-serif;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 0}
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3,h4{text-wrap:balance;margin:0;font-weight:700}
@@ -76,7 +76,7 @@ section[id]{scroll-margin-top:96px}
 .todo{background:#FFF1C2;color:#6B4A00;border-radius:4px;padding:0 4px}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:8px 24px;border-radius:999px;font:600 16px/24px Manrope,sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .3s var(--ease),background-color .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:8px 24px;border-radius:999px;font:600 16px/24px "Golos Text",sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .3s var(--ease),background-color .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease)}
 .btn .ico{transition:transform .5s var(--ease)}
 .btn:hover .ico{transform:translateX(4px)}
 .btn:active{transform:scale(.98)}
@@ -241,12 +241,12 @@ section[id]{scroll-margin-top:96px}
 /* prices */
 .p-tools{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;margin-bottom:24px}
 .segs{display:flex;flex-wrap:wrap;gap:4px;padding:4px;border-radius:999px;background:var(--bg)}
-.seg{min-height:44px;padding:8px 16px;border-radius:999px;border:0;background:transparent;font:600 14px/20px Manrope,sans-serif;color:var(--ink-2);cursor:pointer;transition:background-color .3s var(--ease),color .3s var(--ease)}
+.seg{min-height:44px;padding:8px 16px;border-radius:999px;border:0;background:transparent;font:600 14px/20px "Golos Text",sans-serif;color:var(--ink-2);cursor:pointer;transition:background-color .3s var(--ease),color .3s var(--ease)}
 .seg:hover{color:var(--ink)}
 .seg[aria-selected="true"]{background:var(--navy);color:#fff}
 .p-search{display:flex;align-items:center;gap:8px;height:52px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--white);min-width:280px;color:var(--ink-3);transition:border-color .3s var(--ease)}
 .p-search:focus-within{border-color:var(--navy)}
-.p-search input{border:0;outline:0;background:transparent;font:500 16px/24px Manrope,sans-serif;color:var(--ink);width:100%}
+.p-search input{border:0;outline:0;background:transparent;font:500 16px/24px "Golos Text",sans-serif;color:var(--ink);width:100%}
 .p-list li{list-style:none}
 .p-group{padding:32px 0 12px;font-size:20px;line-height:28px;font-weight:700;color:var(--navy)}
 .p-group:first-child{padding-top:8px}
@@ -271,7 +271,7 @@ section[id]{scroll-margin-top:96px}
 .faq-grid .sec-head{position:sticky;top:120px}
 .faq-grid .lead a{color:var(--navy);font-weight:600}
 .faq-item{border-bottom:1px solid var(--line)}
-.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;background:none;border:0;cursor:pointer;text-align:left;font:600 20px/28px Manrope,sans-serif;color:var(--ink)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;background:none;border:0;cursor:pointer;text-align:left;font:600 20px/28px "Golos Text",sans-serif;color:var(--ink)}
 .faq-q .m-toggle{border-color:var(--line);flex:none;width:44px;height:44px}
 .faq-q[aria-expanded="true"] .m-toggle{transform:rotate(45deg);background:var(--navy);border-color:var(--navy);color:#fff}
 .faq-a{padding:0 64px 24px 0}
@@ -288,7 +288,7 @@ section[id]{scroll-margin-top:96px}
 .form{background:var(--white);color:var(--ink);border-radius:32px;padding:40px;display:flex;flex-direction:column;gap:24px}
 .field{display:flex;flex-direction:column;gap:8px}
 .field label,.flabel{font-size:14px;line-height:20px;font-weight:600;color:var(--ink-2)}
-.field input{height:56px;border-radius:var(--r-2xl);border:1px solid var(--line);background:var(--bg);padding:0 16px;font:500 16px/24px Manrope,sans-serif;color:var(--ink);transition:border-color .3s var(--ease),background-color .3s var(--ease)}
+.field input{height:56px;border-radius:var(--r-2xl);border:1px solid var(--line);background:var(--bg);padding:0 16px;font:500 16px/24px "Golos Text",sans-serif;color:var(--ink);transition:border-color .3s var(--ease),background-color .3s var(--ease)}
 .field input:focus{outline:0;border-color:var(--navy);background:#fff}
 .field input[aria-invalid="true"]{border-color:var(--red);background:#FFF5F5}
 .err{font-size:14px;line-height:20px;color:var(--red)}
@@ -827,7 +827,7 @@ body{background:var(--bg)}
 .timeline li{padding:10px 0;font-size:15px;line-height:22px}
 .timeline li.more{display:none}
 .timeline.open li.more{display:grid;animation:fadeUp .5s var(--ease) both}
-.edu-more{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;font:600 14px/20px Manrope,sans-serif;color:var(--ink);cursor:pointer;transition:border-color .3s var(--ease)}
+.edu-more{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;font:600 14px/20px "Golos Text",sans-serif;color:var(--ink);cursor:pointer;transition:border-color .3s var(--ease)}
 .edu-more:hover{border-color:var(--ink)}
 .edu-more .ico{transition:transform .4s var(--ease)}
 .edu-more[aria-expanded="true"] .ico{transform:rotate(45deg)}
@@ -883,7 +883,7 @@ body{background:var(--bg)}
 .modal [hidden]{display:none !important}
 
 /* ===== v13: premium ===== */
-:root{--serif:"Playfair Display",Georgia,"Times New Roman",serif;--accent:#1F5C59}
+:root{--serif:Onest,"Golos Text",system-ui,sans-serif;--accent:#1F5C59}
 .h1,.h2,.hero .h1,.doc-info .h3,.dir h3,.motto p,.book-phone{font-family:var(--serif);font-weight:500;letter-spacing:-0.015em}
 .h2{font-size:52px;line-height:1.08}
 .hero .h1{font-size:clamp(40px,4vw,60px);line-height:1.08;letter-spacing:-0.02em}
@@ -960,7 +960,7 @@ body.intro-on{overflow:hidden}
 .intro-word{display:flex;flex-direction:column;overflow:hidden}
 .intro-word span{display:block;font-family:var(--serif);color:#16212A;opacity:0;transform:translateY(110%);animation:wordUp .9s var(--ease) forwards}
 .iw1{font-size:44px;line-height:1.05;font-weight:500;letter-spacing:-0.01em;animation-delay:.85s !important}
-.iw2{font-size:20px;line-height:1.4;color:#6F7880 !important;font-family:Manrope,sans-serif !important;letter-spacing:.18em;text-transform:uppercase;animation-delay:1.05s !important}
+.iw2{font-size:20px;line-height:1.4;color:#6F7880 !important;font-family:"Golos Text",sans-serif !important;letter-spacing:.18em;text-transform:uppercase;animation-delay:1.05s !important}
 @keyframes wordUp{to{opacity:1;transform:none}}
 .intro-line{width:180px;height:2px;background:rgba(22,33,42,.1);border-radius:2px;overflow:hidden}
 .intro-line i{display:block;height:100%;background:#1F5C59;transform:scaleX(0);transform-origin:left;animation:lineGo 1.9s cubic-bezier(.65,0,.35,1) forwards .2s}
@@ -1115,7 +1115,7 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
 .story-line li{position:relative;padding-bottom:20px}
 .story-line li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #D8C3A0}
 .story-line li.now::before{background:#1F5C59;border-color:#1F5C59}
-.story-line h4{margin:0 0 6px;font:600 17px/24px Manrope,sans-serif;color:var(--ink)}
+.story-line h4{margin:0 0 6px;font:600 17px/24px "Golos Text",sans-serif;color:var(--ink)}
 .story-line p{margin:0 0 8px;font-size:15px;line-height:24px;color:#3C4852}
 .story-src{grid-column:1/-1;font-size:13px;line-height:18px;color:#8A949C;margin:8px 0 0}
 @media (max-width:720px){.story{grid-template-columns:1fr}.story-photo{grid-column:1;grid-row:2;position:static;max-width:180px;margin-bottom:20px}.story-line{grid-row:3}.edu-actions{gap:8px}}
@@ -1130,6 +1130,12 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
 .hero-cta .btn .ico{margin-right:2px}
 @media (max-width:720px){.cbx-row b{font-size:22px;line-height:28px}.cbx-ico{width:44px;height:44px}.cbx-row{padding:12px}}
 .cta-bar .cb-max[href^="mailto"]{background:#EEF3F2;color:#1F5C59;box-shadow:none}
+
+/* v25: шрифты Onest (заголовки) + Golos Text (текст) */
+.h1,.h2,.hero .h1,.doc-info .h3,.dir h3,.motto p,.book-phone,.cbx-row b{font-family:var(--serif);font-weight:600;letter-spacing:-0.025em}
+.h1,.hero .h1{font-weight:600;letter-spacing:-0.03em}
+.dir h3,.doc-info .h3{letter-spacing:-0.02em}
+.cbx-row b{font-weight:500;letter-spacing:-0.01em}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MedicalClinic", "@id": "https://[ДОМЕН]/#clinic", "name": "Центр ЛОР Ирины Сеновой", "legalName": "ООО «Фарм сервис»", "url": "https://[ДОМЕН]/", "logo": "https://[ДОМЕН]/img/logo.png", "image": "https://[ДОМЕН]/img/hero.jpg", "medicalSpecialty": "Otolaryngologic", "telephone": ["+7-908-215-92-11", "+7-39151-5-92-11"], "email": "farmservis69@mail.ru", "taxID": "2443045036", "priceRange": "300–5000 ₽", "currenciesAccepted": "RUB", "isAcceptingNewPatients": true, "address": {"@type": "PostalAddress", "streetAddress": "1-й микрорайон, зд. 30А, ТЦ «Сапфир», 2 этаж", "addressLocality": "Ачинск", "addressRegion": "Красноярский край", "postalCode": "662150", "addressCountry": "RU"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Friday"], "opens": "10:00", "closes": "17:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "12:00", "closes": "19:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}], "employee": {"@id": "https://[ДОМЕН]/#senova"}, "hasOfferCatalog": {"@id": "https://[ДОМЕН]/#services"}}, {"@type": ["Person", "Physician"], "@id": "https://[ДОМЕН]/#senova", "name": "Сенова Ирина Александровна", "jobTitle": "Врач‑оториноларинголог, сурдолог‑оториноларинголог", "medicalSpecialty": "Otolaryngologic", "image": "https://[ДОМЕН]/img/senova.jpg", "worksFor": {"@id": "https://[ДОМЕН]/#clinic"}}, {"@type": "OfferCatalog", "@id": "https://[ДОМЕН]/#services", "name": "Услуги Центра ЛОР Ирины Сеновой", "itemListElement": [{"@type": "Offer", "price": 2500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный эндоскопический осмотр ЛОР"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Повторный приём ЛОР"}}, {"@type": "Offer", "price": 4000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный приём сурдолога с аудиометрией"}}, {"@type": "Offer", "price": 2000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Аудиометрия"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Удаление серной пробки"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Промывание по Проетцу («Кукушка»)"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Продувание слуховых труб по Политцеру"}}, {"@type": "Offer", "price": 700, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Санация лакун миндалин"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Лазеротерапия ЛОР‑органов"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Ингаляции «Пари Синус»"}}]}, {"@type": "WebSite", "@id": "https://[ДОМЕН]/#website", "url": "https://[ДОМЕН]/", "name": "Центр ЛОР Ирины Сеновой", "inLanguage": "ru", "publisher": {"@id": "https://[ДОМЕН]/#clinic"}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Нужно ли записываться заранее?", "acceptedAnswer": {"@type": "Answer", "text": "Да, приём по предварительной записи. Телефоны: +7 908 215‑92‑11, 8 (39151) 5‑92‑11."}}, {"@type": "Question", "name": "С какого возраста принимаете детей?", "acceptedAnswer": {"@type": "Answer", "text": "Взрослых и детей с рождения (0+). Возраст для аппаратных процедур указан в прейскуранте у каждой процедуры."}}, {"@type": "Question", "name": "Сколько стоит первичный приём?", "acceptedAnswer": {"@type": "Answer", "text": "Первичный эндоскопический осмотр ЛОР: 2 500 ₽ на 1 человека, 4 000 ₽ на семью из 2 человек, 5 000 ₽ на семью из 3 человек. Первичный осмотр ЛОР с процедурой: 3 500 ₽."}}, {"@type": "Question", "name": "Входят ли лекарства в стоимость?", "acceptedAnswer": {"@type": "Answer", "text": "Цены на манипуляции указаны с учётом стоимости медикаментов, на процедуры «Аудиотон», «Тонзиллор‑ММ» и «Пари Синус» с учётом лекарственных препаратов. В процедурном кабинете цена включает расходные материалы и физиологический раствор для инфузий."}}, {"@type": "Question", "name": "У меня есть своя аудиограмма. Это учитывается?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Первичный приём сурдолога со своей аудиограммой стоит 3 000 ₽, с аудиометрией 4 000 ₽."}}, {"@type": "Question", "name": "Делаете ли осмотр перед плановой операцией?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Осмотр ЛОР для планового оперативного лечения: 1 000 ₽, с прямой ларингоскопией 2 500 ₽."}}, {"@type": "Question", "name": "Можно ли лечиться по полису ОМС?", "acceptedAnswer": {"@type": "Answer", "text": "Услуги центра платные. Бесплатную медицинскую помощь можно получить по Программе госгарантий в организациях, которые в ней участвуют."}}]}</script>
