@@ -1119,6 +1119,17 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
 .story-line p{margin:0 0 8px;font-size:15px;line-height:24px;color:#3C4852}
 .story-src{grid-column:1/-1;font-size:13px;line-height:18px;color:#8A949C;margin:8px 0 0}
 @media (max-width:720px){.story{grid-template-columns:1fr}.story-photo{grid-column:1;grid-row:2;position:static;max-width:180px;margin-bottom:20px}.story-line{grid-row:3}.edu-actions{gap:8px}}
+/* v24: вместо формы — телефоны и почта */
+.contact-box{background:#fff;color:var(--ink);border-radius:32px;padding:16px;display:flex;flex-direction:column;gap:4px;box-shadow:0 32px 64px -32px rgba(0,0,0,.5)}
+.cbx-row{display:flex;align-items:center;gap:16px;padding:16px;border-radius:20px;color:var(--ink);text-decoration:none;transition:background .3s var(--ease)}
+.cbx-row:hover{background:#F5F3EE}
+.cbx-ico{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#E7F0EE;color:#1F5C59}
+.cbx-row small{display:block;font-size:13px;line-height:18px;color:#6B7680}
+.cbx-row b{display:block;font-family:var(--serif);font-weight:500;font-size:28px;line-height:36px;letter-spacing:-0.01em;overflow-wrap:anywhere}
+.cbx-note{margin:4px 16px 12px;font-size:14px;line-height:20px;color:#6B7680}
+.hero-cta .btn .ico{margin-right:2px}
+@media (max-width:720px){.cbx-row b{font-size:22px;line-height:28px}.cbx-ico{width:44px;height:44px}.cbx-row{padding:12px}}
+.cta-bar .cb-max[href^="mailto"]{background:#EEF3F2;color:#1F5C59;box-shadow:none}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MedicalClinic", "@id": "https://[ДОМЕН]/#clinic", "name": "Центр ЛОР Ирины Сеновой", "legalName": "ООО «Фарм сервис»", "url": "https://[ДОМЕН]/", "logo": "https://[ДОМЕН]/img/logo.png", "image": "https://[ДОМЕН]/img/hero.jpg", "medicalSpecialty": "Otolaryngologic", "telephone": ["+7-908-215-92-11", "+7-39151-5-92-11"], "email": "farmservis69@mail.ru", "taxID": "2443045036", "priceRange": "300–5000 ₽", "currenciesAccepted": "RUB", "isAcceptingNewPatients": true, "address": {"@type": "PostalAddress", "streetAddress": "1-й микрорайон, зд. 30А, ТЦ «Сапфир», 2 этаж", "addressLocality": "Ачинск", "addressRegion": "Красноярский край", "postalCode": "662150", "addressCountry": "RU"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Friday"], "opens": "10:00", "closes": "17:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "12:00", "closes": "19:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}], "employee": {"@id": "https://[ДОМЕН]/#senova"}, "hasOfferCatalog": {"@id": "https://[ДОМЕН]/#services"}}, {"@type": ["Person", "Physician"], "@id": "https://[ДОМЕН]/#senova", "name": "Сенова Ирина Александровна", "jobTitle": "Врач‑оториноларинголог, сурдолог‑оториноларинголог", "medicalSpecialty": "Otolaryngologic", "image": "https://[ДОМЕН]/img/senova.jpg", "worksFor": {"@id": "https://[ДОМЕН]/#clinic"}}, {"@type": "OfferCatalog", "@id": "https://[ДОМЕН]/#services", "name": "Услуги Центра ЛОР Ирины Сеновой", "itemListElement": [{"@type": "Offer", "price": 2500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный эндоскопический осмотр ЛОР"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Повторный приём ЛОР"}}, {"@type": "Offer", "price": 4000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Первичный приём сурдолога с аудиометрией"}}, {"@type": "Offer", "price": 2000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Аудиометрия"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Удаление серной пробки"}}, {"@type": "Offer", "price": 1000, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Промывание по Проетцу («Кукушка»)"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Продувание слуховых труб по Политцеру"}}, {"@type": "Offer", "price": 700, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Санация лакун миндалин"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Лазеротерапия ЛОР‑органов"}}, {"@type": "Offer", "price": 500, "priceCurrency": "RUB", "itemOffered": {"@type": "MedicalProcedure", "name": "Ингаляции «Пари Синус»"}}]}, {"@type": "WebSite", "@id": "https://[ДОМЕН]/#website", "url": "https://[ДОМЕН]/", "name": "Центр ЛОР Ирины Сеновой", "inLanguage": "ru", "publisher": {"@id": "https://[ДОМЕН]/#clinic"}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Нужно ли записываться заранее?", "acceptedAnswer": {"@type": "Answer", "text": "Да, приём по предварительной записи. Телефоны: +7 908 215‑92‑11, 8 (39151) 5‑92‑11."}}, {"@type": "Question", "name": "С какого возраста принимаете детей?", "acceptedAnswer": {"@type": "Answer", "text": "Взрослых и детей с рождения (0+). Возраст для аппаратных процедур указан в прейскуранте у каждой процедуры."}}, {"@type": "Question", "name": "Сколько стоит первичный приём?", "acceptedAnswer": {"@type": "Answer", "text": "Первичный эндоскопический осмотр ЛОР: 2 500 ₽ на 1 человека, 4 000 ₽ на семью из 2 человек, 5 000 ₽ на семью из 3 человек. Первичный осмотр ЛОР с процедурой: 3 500 ₽."}}, {"@type": "Question", "name": "Входят ли лекарства в стоимость?", "acceptedAnswer": {"@type": "Answer", "text": "Цены на манипуляции указаны с учётом стоимости медикаментов, на процедуры «Аудиотон», «Тонзиллор‑ММ» и «Пари Синус» с учётом лекарственных препаратов. В процедурном кабинете цена включает расходные материалы и физиологический раствор для инфузий."}}, {"@type": "Question", "name": "У меня есть своя аудиограмма. Это учитывается?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Первичный приём сурдолога со своей аудиограммой стоит 3 000 ₽, с аудиометрией 4 000 ₽."}}, {"@type": "Question", "name": "Делаете ли осмотр перед плановой операцией?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Осмотр ЛОР для планового оперативного лечения: 1 000 ₽, с прямой ларингоскопией 2 500 ₽."}}, {"@type": "Question", "name": "Можно ли лечиться по полису ОМС?", "acceptedAnswer": {"@type": "Answer", "text": "Услуги центра платные. Бесплатную медицинскую помощь можно получить по Программе госгарантий в организациях, которые в ней участвуют."}}]}</script>
@@ -1143,14 +1154,14 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
     <a class="brand" href="#top" aria-label="Центр ЛОР Ирины Сеновой, наверх"><img src="img/logo.webp" alt="Центр ЛОР Ирины Сеновой" width="600" height="270"></a>
     <ul class="nav-links"><li><a href="#directions">Направления</a></li><li><a href="#methods">Лечение</a></li><li><a href="#team">Врач</a></li><li><a href="#prices">Цены</a></li><li><a href="#faq">Вопросы</a></li><li><a href="#info">Пациентам</a></li><li><a href="#contacts">Контакты</a></li></ul>
     <a class="nav-phone" href="tel:+79082159211"><svg class="ico " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span>+7 908 215‑92‑11</span></a>
-    <a class="btn btn-red btn-sm" href="#booking">Записаться</a>
+    <a class="btn btn-red btn-sm" href="tel:+79082159211">Позвонить</a>
     <span class="nav-progress" aria-hidden="true"></span>
     <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
   </nav>
 </header>
 <div class="mmenu" id="mmenu" hidden>
   <ul><li><a href="#directions">Направления</a></li><li><a href="#methods">Лечение</a></li><li><a href="#team">Врач</a></li><li><a href="#prices">Цены</a></li><li><a href="#faq">Вопросы</a></li><li><a href="#info">Пациентам</a></li><li><a href="#contacts">Контакты</a></li></ul>
-  <div class="mmenu-foot"><a class="btn btn-red" href="#booking">Записаться на приём</a><a class="mm-phone" href="tel:+79082159211">+7 908 215‑92‑11</a></div>
+  <div class="mmenu-foot"><a class="btn btn-red" href="tel:+79082159211">Позвонить: +7 908 215‑92‑11</a><a class="mm-phone" href="mailto:farmservis69@mail.ru">farmservis69@mail.ru</a></div>
 </div>
 
 <main id="main">
@@ -1167,8 +1178,8 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
       <h1 class="h1"><span class="ln">Лечение <span class="hl hl-navy">уха</span>, <span class="hl hl-yellow">носа</span></span> <span class="ln">и <span class="hl hl-green">глотки</span> в Ачинске</span></h1>
       <p class="sub">Центр консервативного лечения заболеваний уха, носа, глотки у&nbsp;взрослых и детей (0+). Сурдология и&nbsp;аудиология.</p>
       <div class="hero-cta">
-        <a class="btn btn-red btn-lg" href="#booking">Записаться на приём <svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="hero-phone" href="tel:+79082159211"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span><small>или позвоните</small>+7 908 215‑92‑11</span></a>
+        <a class="btn btn-red btn-lg" href="tel:+79082159211"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg> +7 908 215‑92‑11</a>
+        <a class="hero-phone" href="mailto:farmservis69@mail.ru"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><small>или напишите на почту</small>farmservis69@mail.ru</span></a>
       </div>
       <div class="hero-doc">
         <img src="img/senova-96.webp" alt="" width="48" height="48">
@@ -1373,7 +1384,7 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
   <div class="container">
     <div class="sec-head reveal"><h2 class="h2" id="how-h">Как попасть на приём</h2></div>
     <ol class="steps">
-      <li class="step reveal"><span class="step-n t-navy">1</span><h3>Запишитесь заранее</h3><p>Приём по предварительной записи: +7 908 215‑92‑11, 8 (39151) 5‑92‑11 или заявка на сайте.</p></li>
+      <li class="step reveal"><span class="step-n t-navy">1</span><h3>Запишитесь заранее</h3><p>Приём по предварительной записи: +7 908 215‑92‑11, 8 (39151) 5‑92‑11 или почта farmservis69@mail.ru.</p></li>
       <li class="step reveal"><span class="step-n t-yellow">2</span><h3>Возьмите документы</h3><p>Паспорт, для ребёнка свидетельство о рождении. Если есть, аудиограмму и выписки.</p></li>
       <li class="step reveal"><span class="step-n t-green">3</span><h3>Приходите на приём</h3><p>1‑й микрорайон, зд. 30А, маг. «Сапфир», 2‑й этаж.</p></li>
     </ol>
@@ -1394,23 +1405,15 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
     <div class="book-copy reveal">
       
       <h2 class="h2">Запишитесь на приём</h2>
-      <p class="lead">Оставьте телефон, и администратор перезвонит в рабочее время, чтобы подобрать удобный день.</p>
-      <a class="book-phone" href="tel:+79082159211">+7 908 215‑92‑11</a>
-      <a class="book-phone2" href="tel:+73915159211">8 (39151) 5‑92‑11</a>
+      <p class="lead">Позвоните нам или напишите на почту.</p>
       <p class="free">Медицинская помощь в центре оказывается на платной основе. Вы вправе получить бесплатную медицинскую помощь в рамках Программы государственных гарантий и территориальной программы Красноярского края в организациях, участвующих в её реализации. Отказ от платных услуг не уменьшает объём бесплатной помощи.</p>
     </div>
-    <form class="form reveal" id="booking-form" novalidate aria-label="Запись на приём">
-      <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required><span class="err" hidden>Укажите имя</span></div>
-      <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000 00 00" required><span class="err" hidden>Укажите номер из 11 цифр</span></div>
-      <div class="field"><span class="flabel" id="who-l">Кого записываем</span>
-        <div class="radios" role="radiogroup" aria-labelledby="who-l"><label><input type="radio" name="who" value="adult" checked><span>Взрослого</span></label><label><input type="radio" name="who" value="child"><span>Ребёнка</span></label><label><input type="radio" name="who" value="family"><span>Семью</span></label></div>
-      </div>
-      <label class="consent"><input type="checkbox" name="consent" required><span>Даю <a href="#" data-todo="Согласие на обработку ПДн">согласие на обработку персональных данных</a> и принимаю <a href="#" data-todo="Политика ПДн">политику обработки персональных данных</a></span></label>
-      <span class="err err-c" hidden>Без согласия мы не сможем принять заявку</span>
-      <button class="btn btn-red btn-full" type="submit">Отправить заявку <svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-      <p class="form-ok" role="status" hidden><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg> Заявка принята. Администратор перезвонит в рабочее время.</p>
-      <p class="form-note">Не указывайте в форме сведения о здоровье и диагнозах.</p>
-    </form>
+    <div class="contact-box reveal">
+      <a class="cbx-row" href="tel:+79082159211"><span class="cbx-ico"><svg class="ico " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg></span><span><small>Мобильный</small><b>+7 908 215‑92‑11</b></span></a>
+      <a class="cbx-row" href="tel:+73915159211"><span class="cbx-ico"><svg class="ico " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg></span><span><small>Городской</small><b>8 (39151) 5‑92‑11</b></span></a>
+      <a class="cbx-row" href="mailto:farmservis69@mail.ru"><span class="cbx-ico"><svg class="ico " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Электронная почта</small><b>farmservis69@mail.ru</b></span></a>
+      <p class="cbx-note">Приём по предварительной записи.</p>
+    </div>
   </div>
 </section>
 
@@ -1484,8 +1487,9 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
       <h2 class="h2">Ждём вас<br>в Ачинске</h2>
       <div class="c-row"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.2a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.6"/></svg><span>1‑й микрорайон, зд. 30А<br>ТЦ «Сапфир», 2‑й этаж</span></div>
       <div class="c-row"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span><a href="tel:+79082159211">+7 908 215‑92‑11</a><br><a href="tel:+73915159211">8 (39151) 5‑92‑11</a></span></div>
+      <div class="c-row"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><a href="mailto:farmservis69@mail.ru">farmservis69@mail.ru</a></span></div>
       <div class="c-row"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg><ul class="hours"><li><span>Вт, Ср, Пт</span><span><b>10:00–17:00</b><small>перерыв 13:00–13:40</small></span></li><li><span>Четверг</span><span><b>12:00–19:00</b><small>перерыв 15:00–15:40</small></span></li><li><span>Суббота</span><span><b>10:00–16:00</b><small>перерыв 13:00–13:40</small></span></li><li><span>Вс, Пн</span><span><b>выходные</b></span></li></ul></div>
-      <a class="btn btn-red" href="#booking">Записаться на приём <svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-red" href="tel:+79082159211"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg> Позвонить</a>
     </div>
     <div class="map reveal">
       <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%90%D1%87%D0%B8%D0%BD%D1%81%D0%BA%2C%201-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2030%D0%90&amp;z=17" title="Карта: Ачинск, 1‑й микрорайон, 30А, ТЦ «Сапфир»" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -1514,9 +1518,10 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
   <button class="lb-nav lb-next" type="button" aria-label="Следующее фото"><svg class="ico " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
 </dialog>
 <div class="cta-bar" id="cta-bar" aria-label="Быстрая запись">
-  <a class="cb-phone" href="tel:+79082159211"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span><small>Позвонить</small>+7 908 215‑92‑11</span></a>
+  <a class="cb-phone" href="tel:+79082159211"><svg class="ico " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.2-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span><small>Телефон</small>+7 908 215‑92‑11</span></a>
   <a class="cb-max" href="#" data-todo="Ссылка на MAX" aria-label="Написать в мессенджер MAX"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3.3 6.5L4 19.5l1-3.4A8 8 0 0 1 4 12z"/><path d="M8.5 14.5v-5l3.5 3.5 3.5-3.5v5"/></svg><span>MAX</span></a>
-  <a class="btn btn-red cb-btn" href="#booking">Записаться на приём</a>
+  <a class="cb-max" href="mailto:farmservis69@mail.ru" aria-label="Написать на почту"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Почта</span></a>
+  <a class="btn btn-red cb-btn" href="tel:+79082159211">Позвонить</a>
 </div>
 <div class="cookie" id="cookie" role="region" aria-label="Уведомление о cookie" hidden>
   <p>Сайт использует файлы cookie. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="#" data-todo="Политика ПДн">политикой обработки персональных данных</a>.</p>
@@ -1689,28 +1694,6 @@ body.intro-on .hero-copy>*,body.intro-on .hero-media>picture img,body.intro-on .
     empty.hidden = any > 0;
   }
   search.addEventListener('input', filter);
-
-  // form validation
-  var f = document.getElementById('booking-form');
-  var phone = f.querySelector('#f-phone');
-  phone.addEventListener('input', function(){
-    var d = phone.value.replace(/\D/g,''); if (!d) { phone.value=''; return; }
-    if (d[0]==='8') d = '7' + d.slice(1); if (d[0]!=='7') d = '7' + d; d = d.slice(0,11);
-    var o = '+7'; if (d.length>1) o += ' ' + d.slice(1,4); if (d.length>4) o += ' ' + d.slice(4,7); if (d.length>7) o += ' ' + d.slice(7,9); if (d.length>9) o += ' ' + d.slice(9,11);
-    phone.value = o;
-  });
-  function setErr(el, bad, errEl){ el.setAttribute('aria-invalid', bad); (errEl || el.parentNode.querySelector('.err')).hidden = !bad; }
-  f.addEventListener('submit', function(e){
-    e.preventDefault();
-    var name = f.querySelector('#f-name'), c = f.querySelector('[name=consent]');
-    var bN = !name.value.trim(), bP = phone.value.replace(/\D/g,'').length !== 11, bC = !c.checked;
-    setErr(name,bN); setErr(phone,bP); setErr(c,bC,f.querySelector('.err-c'));
-    var firstBad = bN ? name : bP ? phone : bC ? c : null;
-    if (firstBad) { firstBad.focus(); return; }
-    var btn = f.querySelector('button[type=submit]'); btn.disabled = true; btn.firstChild.textContent = 'Отправляем… ';
-    /* TODO: подключить отправку заявки (CRM, Telegram‑бот или почта). Сейчас заявка никуда не уходит. */
-    setTimeout(function(){ btn.hidden = true; f.querySelector('.form-ok').hidden = false; }, 700);
-  });
 
   // dead links → disabled until documents are uploaded
   [].forEach.call(document.querySelectorAll('a[data-todo]'), function(a){
